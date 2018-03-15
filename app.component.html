@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1 style="ceter"> Message Form: {{passenger.Title}}</h1>
+  <div class="column small-12 large-2">
+    <label class="sbw_light">Title:</label><br />
+    <select [(ngModel)]="passenger.Title">
+        <option *ngFor="let title of titleArray" [value]="title.Value">
+          {{title.Text}}
+        </option>
+    </select>
+      <button class="btn" ng-click="open()">Click Here to add Message with buttons</button>
+      <app-msgdetail></app-msgdetail>
+  </div>
+
+  
