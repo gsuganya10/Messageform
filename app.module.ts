@@ -1,29 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
+import { Routes, RouterModule }  from '@angular/router';
+import { routing } from './app.routes';
+import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { PopupModule } from 'ng2-opd-popup';
-import { RouterModule, Routes } from '@angular/router';
-import { ReactiveFormsModule }    from '@angular/forms'; 
-import { MsgdetailComponent } from './msgdetail/msgdetail.component';
-import { MsgDetailService }  from './msgdetail/msgdetail.service';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MsgdetailComponent
+    AppComponent
   ],
-
   imports: [
-    BrowserModule, 
-    FormsModule,
-    PopupModule.forRoot(),
-    ReactiveFormsModule
+    BrowserModule,
+	  FormsModule,
+    HttpModule, 
+    routing
   ],
-  
-  providers: [MsgDetailService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

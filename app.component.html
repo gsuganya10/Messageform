@@ -1,14 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1 style="ceter"> Message Form: {{passenger.Title}}</h1>
-  <div class="column small-12 large-2">
-    <label class="sbw_light">Title:</label><br />
-    <select [(ngModel)]="passenger.Title">
-        <option *ngFor="let title of titleArray" [value]="title.Value">
-          {{title.Text}}
-        </option>
-    </select>
-      <button class="btn" ng-click="open()">Click Here to add Message with buttons</button>
-      <app-msgdetail></app-msgdetail>
-  </div>
+<div class="topnav" id="myTopnav">
+  <a routerLink="menu/user" routerLinkActive="active">
+    User Profile Settings</a>
+  <a routerLink="menu/property" routerLinkActive="active">
+    System Settings</a>
+  <a routerLink="menu/beneficiary" routerLinkActive="active">
+    Beneficiary List</a>
+  <a routerLink="menu/tnc" routerLinkActive="active">
+    T & C Settings</a>
+  <a routerLink="menu/charity" routerLinkActive="active">
+    Charity Account Settings</a>
+  <a routerLink="menu/chatBotEditor" routerLinkActive="active">
+    Chat Bot Editor</a>
+</div>
 
-  
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
