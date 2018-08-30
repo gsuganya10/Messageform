@@ -1,0 +1,36 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "VIGNESWARAN",
+  "dependencies": {
+    "@coreui/coreui": "^2.0.4",
+    "@coreui/icons": "^0.3.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "cuid": "^2.1.1",
+    "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "perfect-scrollbar": "^1.4.0",
+    "popper.js": "^1.14.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-orm": "^0.12.1",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1",
+    "simple-line-icons": "^2.4.1"
+  },
+  "devDependencies": {}
+}
